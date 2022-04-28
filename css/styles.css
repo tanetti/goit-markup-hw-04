@@ -197,8 +197,7 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--secondary-backround-color);
-  color: var(--caption-text-color);
+  background-color: #188ce8;
 }
 
 /* Особенности */
@@ -391,5 +390,5 @@ body {
 }
 
 .footer-address {
-  font-style: normal;
+  font-style: inherit;
 }
