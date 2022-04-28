@@ -108,13 +108,11 @@ body {
 
 .contact-footer-link {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal; /* Необходимо для снятия italic от тега address */
   line-height: 1.71;
 }
 
 .geo-link {
   color: #fff;
-  font-style: normal; /* Необходимо для снятия italic от тега address */
   line-height: 1.71;
 }
 
@@ -390,4 +388,8 @@ body {
 
 .footer-link-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-address {
+  font-style: normal;
 }
