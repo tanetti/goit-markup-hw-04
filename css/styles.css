@@ -222,12 +222,23 @@ body {
   display: flex;
 }
 
-.features .item {
+.features-item {
   width: 270px;
 }
 
-.features .item:not(:last-child) {
+.features-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-item:before {
+  content: '';
+
+  display: block;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-backround-color);
+  border-radius: 4px;
 }
 
 .features-caption {
@@ -312,6 +323,27 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+/* Постоянные клиенты */
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: calc((100% - 150px) / 6);
+  padding: 16px 32px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-item:hover {
+  border: 1px solid var(--accent-color);
 }
 
 /* Галерея */
