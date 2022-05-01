@@ -227,10 +227,9 @@ body {
   margin-right: 30px;
 }
 
-.features-item:before {
-  content: '';
-
-  display: block;
+.features-icon-block {
+  width: 270px;
+  height: 120px;
   padding: 25px 100px;
   margin-bottom: 30px;
 
@@ -317,9 +316,43 @@ body {
 }
 
 .team-position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.team-socials-list {
+  display: flex;
+}
+
+.team-socials-list-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-socials-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+
+  color: #afb1b8;
+  border-radius: 50%;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+.team-social-link-icon {
+  fill: currentColor;
 }
 
 /* Постоянные клиенты */
@@ -333,14 +366,20 @@ body {
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-item:hover {
+.clients-item:hover,
+.clients-item:focus {
   border: 1px solid var(--accent-color);
+}
+
+.client-link {
+  display: block;
 }
 
 /* Галерея */
@@ -437,6 +476,15 @@ body {
   background-color: var(--hero-footer-backround-color);
 }
 
+.footer-container {
+  display: flex;
+}
+
+.footer-address-container {
+  width: 231px;
+  margin-right: 70px;
+}
+
 .footer-logo-margin {
   display: inline-block;
   margin-bottom: 20px;
@@ -448,4 +496,51 @@ body {
 
 .footer-address {
   font-style: inherit;
+}
+
+.footer-socials-container {
+  width: 206px;
+  margin-top: 12px;
+}
+
+.footer-socials-caption {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: #fff;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.footer-socials-list {
+  display: flex;
+}
+
+.footer-socials-list-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-socials-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-link-icon {
+  fill: currentColor;
 }
