@@ -8,6 +8,8 @@
   --hero-text-color: #fff;
 
   --accent-color: #2196f3;
+
+  --icon-first-color: #afb1b8;
 }
 
 body {
@@ -103,7 +105,8 @@ body {
 }
 
 .contact-header-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -153,7 +156,7 @@ body {
   display: flex;
 }
 
-.main-menu .item:not(:last-child) {
+.main-menu-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -162,8 +165,13 @@ body {
   margin-left: auto;
 }
 
-.contacts .item:not(:last-child) {
-  margin-right: 50px;
+.contacts-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Герой */
@@ -341,7 +349,7 @@ body {
   height: 100%;
   padding: 12px;
 
-  color: #afb1b8;
+  color: var(--icon-first-color);
   border-radius: 50%;
 }
 
@@ -361,25 +369,33 @@ body {
 }
 
 .clients-item {
-  width: calc((100% - 150px) / 6);
-  padding: 16px 32px;
-
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  cursor: pointer;
+  width: 170px;
+  height: 92px;
 }
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
-  border: 1px solid var(--accent-color);
+.client-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 16px 32px;
+
+  color: var(--icon-first-color);
+  border: 1px solid var(--icon-first-color);
+  border-radius: 4px;
 }
 
-.client-link {
-  display: block;
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.client-icon {
+  fill: currentColor;
 }
 
 /* Галерея */
